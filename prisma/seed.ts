@@ -40,7 +40,7 @@ async function main() {
 
   await prisma.siteMeta.upsert({
     where: { id: 1 },
-    create: { id: 1, coreVersion: process.env.CORE_VERSION ?? "0.1.0" },
+    create: { id: 1, installed: true, siteName: "Bloomin LMS (dev)", coreVersion: process.env.CORE_VERSION ?? "0.1.0" },
     update: {},
   });
 
