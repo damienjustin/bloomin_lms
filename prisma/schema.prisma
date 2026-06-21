@@ -101,6 +101,8 @@ model LessonProgress {
 // admin "check for updates" page to compare against GitHub releases.
 model SiteMeta {
   id           Int      @id @default(1)
+  installed    Boolean  @default(false)
+  siteName     String?
   coreVersion  String
   updatedAt    DateTime @updatedAt
 }
