@@ -1,0 +1,14 @@
+{
+  "name": "bloomin-lms",
+  "version": "0.1.0",
+  "private": true,
+  "description": "LMS basé sur le moteur Ghost (ghost/core), modifié pour ajouter cours/leçons/progression.",
+  "engines": {
+    "node": "^22.18.0"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "dev": "pnpm --filter ghost dev",
+    "knex-migrator": "pnpm --filter ghost knex-migrator"
+  }
+}
